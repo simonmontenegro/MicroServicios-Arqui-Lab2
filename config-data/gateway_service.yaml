@@ -17,23 +17,36 @@ spring:
         locator:
           enabled: true
       routes:
-        - id: empleados-services
-          uri: lb://empleados-services
+        - id: area_service
+          uri: lb://area_service
           predicates:
-            - Path=/empleados/**
-        - id: importar-datos
-          uri: lb://importar-datos
+            - Path=/area/**
+        - id: categoria_service
+          uri: lb://categoria_service
           predicates:
-            - Path=/datos/**
-        - id: justificativos
-          uri: lb://justificativos
+            - Path=/categoria/**
+        - id: horario_personal_service
+          uri: lb://horario_personal_service
+          predicates:
+            - Path=/horarioPersonal/**
+        - id: horario_service
+          uri: lb://horario_service
+          predicates:
+            - Path=/horario/**
+        - id: justificativo_personal_service
+          uri: lb://justificativo_personal_service
+          predicates:
+            - Path=/justificativoPersonal/**
+        - id: justificativo_service
+          uri: lb://justificativo_service
           predicates:
             - Path=/justificativo/**
-        - id: horas-extras
-          uri: lb://horas-extras
+        - id: pago_service
+          uri: lb://pago_service
           predicates:
-            - Path=/horas/**
-        - id: reporte-planilla
-          uri: lb://reporte-planilla
+            - Path=/pago/**
+        - id: personal_service
+          uri: lb://personal_service
           predicates:
-            - Path=/reporte/**
+            - Path=/personal/**
+        
