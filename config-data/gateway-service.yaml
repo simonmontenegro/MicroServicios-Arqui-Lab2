@@ -49,8 +49,8 @@ spring:
           uri: lb://personal_service
           predicates:
             - Path=/personal/**
-        - id: archivo_service
-          uri: lb://archivo_service
+        - id: archivo-service
+          uri: lb://archivo-service
           predicates:
             - Path=/archivo/**
         
