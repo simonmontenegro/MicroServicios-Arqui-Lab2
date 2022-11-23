@@ -29,8 +29,8 @@ spring:
           uri: lb://horario_personal_service
           predicates:
             - Path=/horarioPersonal/**
-        - id: horario_service
-          uri: lb://horario_service
+        - id: horario-service
+          uri: lb://horario-service
           predicates:
             - Path=/horario/**
         - id: justificativo_personal_service
@@ -49,4 +49,8 @@ spring:
           uri: lb://personal_service
           predicates:
             - Path=/personal/**
+        - id: archivo_service
+          uri: lb://archivo_service
+          predicates:
+            - Path=/archivo/**
         
