@@ -17,36 +17,36 @@ spring:
         locator:
           enabled: true
       routes:
-        - id: area_service
-          uri: lb://area_service
+        - id: area-service
+          uri: lb://area-service
           predicates:
             - Path=/area/**
-        - id: categoria_service
-          uri: lb://categoria_service
+        - id: categoria-service
+          uri: lb://categoria-service
           predicates:
             - Path=/categoria/**
-        - id: horario_personal_service
-          uri: lb://horario_personal_service
+        - id: horario-personal-service
+          uri: lb://horario-personal-service
           predicates:
             - Path=/horarioPersonal/**
         - id: horario-service
           uri: lb://horario-service
           predicates:
             - Path=/horario/**
-        - id: justificativo_personal_service
-          uri: lb://justificativo_personal_service
+        - id: justificativo-personal-service
+          uri: lb://justificativo-personal-service
           predicates:
             - Path=/justificativoPersonal/**
-        - id: justificativo_service
-          uri: lb://justificativo_service
+        - id: justificativo-service
+          uri: lb://justificativo-service
           predicates:
             - Path=/justificativo/**
-        - id: pago_service
-          uri: lb://pago_service
+        - id: pago-service
+          uri: lb://pago-service
           predicates:
             - Path=/pago/**
-        - id: personal_service
-          uri: lb://personal_service
+        - id: personal-service
+          uri: lb://personal-service
           predicates:
             - Path=/personal/**
         - id: archivo-service
