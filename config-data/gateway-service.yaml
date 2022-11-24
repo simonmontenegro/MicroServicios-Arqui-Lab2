@@ -61,3 +61,11 @@ spring:
           uri: lb://autorizacion-personal-service
           predicates:
             - Path=/autorizacionPersonal/**
+        - id: calcularPlanilla-service
+          uri: lb://calcularPlanilla-service
+          predicates:
+            - Path=/calcularPlanilla/**
+        - id: reportePlanilla-service
+          uri: lb://reportePlanilla-service
+          predicates:
+            - Path=/reporte/**
